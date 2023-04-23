@@ -113,7 +113,7 @@ nav {
 
 header {
 	position: relative;
-	background-image: url('dist/img/jungle-1807476_640.jpg');
+	background-image: url('/dist/img/jungleSmall.jpg');
 	background-size: cover;
 	background-position: center;
 	min-height: 40vh;
@@ -199,7 +199,7 @@ main {
 		align-items: center;
 		min-height: 30vh;
 		margin-top: 2em;
-		background-image: url('dist/img/girl-5785590_640.jpg');
+		background-image: url('/dist/img/girlSmall.jpg');
 		background-size: cover;
 		background-position: center;
 		font-size: 1.5rem;
@@ -261,7 +261,7 @@ main {
 
 	header {
 		margin-top: 0;
-		background-image: url('dist/img/jungle-1807476_1920.jpg');
+		background-image: url('/dist/img/jungleBig.jpg');
 
 		.hero-text {
 			font-size: 2.5rem;
@@ -297,14 +297,14 @@ main {
 				}
 
 				img {
-					content: url('dist/img/waters-3095682_1920.jpg');
+					content: url('/dist/img/watersBig.jpg');
 					width: 47%;
 				}
 			}
 		}
 
 		.banner-family {
-			background-image: url('dist/img/girl-5785590_1920.jpg');
+			background-image: url('/dist/img/girlBig.jpg');
 
 			&__text {
 				font-size: 2rem;
