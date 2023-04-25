@@ -3,7 +3,6 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	overflow-x: hidden;
 }
 
 body {
@@ -12,6 +11,7 @@ body {
 	min-height: 100vh;
 	background-color: #fff;
 	color: #333;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -29,6 +29,13 @@ a {
 	text-decoration: none;
 }
 
+.fa-check {
+	color: rgb(20, 192, 15);
+}
+
+.option-off {
+	color: rgb(150, 150, 150);
+}
 
 nav {
 	background-color: #fff;
@@ -81,13 +88,15 @@ nav {
 	display: flex;
 	position: fixed;
 	top: 0;
+	left: 0;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	width: 100vw;
-	transform: translateX(100%);
+	transform: translateX(110%);
 	transition: transform 0.4s;
 	background-color: #fff;
+	z-index: 1000;
 
 	button {
 		position: fixed;
@@ -110,10 +119,9 @@ nav {
 	}
 }
 
-
 header {
 	position: relative;
-	background-image: url('dist/img/jungleSmall.jpg');
+	background-image: url("/dist/img/jungleSmall.jpg");
 	background-size: cover;
 	background-position: center;
 	min-height: 40vh;
@@ -144,7 +152,7 @@ header {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.7);
 		z-index: -1;
 	}
 }
@@ -155,11 +163,11 @@ main {
 		flex-direction: column;
 		align-items: center;
 		font-size: 3rem;
-		
+
 		h3 {
 			font-weight: 400;
 		}
-		
+
 		&__title {
 			padding: 1em;
 			text-transform: uppercase;
@@ -169,8 +177,7 @@ main {
 			display: flex;
 			flex-direction: column;
 
-			img
-			 {
+			img {
 				padding: 0.5em;
 			}
 
@@ -186,9 +193,7 @@ main {
 					font-weight: 700;
 					text-align: center;
 				}
-	
 			}
-
 		}
 	}
 
@@ -199,7 +204,7 @@ main {
 		align-items: center;
 		min-height: 30vh;
 		margin-top: 2em;
-		background-image: url('dist/img/girlSmall.jpg');
+		background-image: url("/dist/img/girlSmall.jpg");
 		background-size: cover;
 		background-position: center;
 		font-size: 1.5rem;
@@ -231,6 +236,139 @@ main {
 			z-index: 3;
 		}
 	}
+
+	.offers {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 0.5em;
+		font-size: 3rem;
+		&__title {
+			padding: 1em;
+			h3 {
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+		&__text {
+			padding: 1em;
+			font-size: 2rem;
+		}
+
+		&__cards {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 0.7em;
+			font-size: 2rem;
+
+			.offers__card {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 81vw;
+				padding: 1.5em;
+				margin-top: 1em;
+				text-align: center;
+				box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.4);
+				border-radius: 5px;
+
+				.card-title,
+				.price,
+				.card-options {
+					padding: 0.3em;
+				}
+
+				.card-title {
+					font-size: 2.5rem;
+				}
+
+				.price {
+					font-size: 2.7rem;
+					font-weight: 700;
+				}
+
+				.card-options {
+					text-align: left;
+
+					p {
+						padding: 0.2em 0em;
+					}
+				}
+
+				.choose {
+					margin-top: 1.5em;
+					padding: 0.5em;
+					width: 60%;
+					background: none;
+					border: none;
+					border-radius: 8px;
+					box-shadow: 2px 2px 5px black;
+					font-size: 1.5rem;
+					cursor: pointer;
+				}
+				.standard {
+					background-color: rgb(10, 218, 100);
+					box-shadow: 2px 2px 5px rgb(10, 218, 100);
+				}
+			}
+		}
+	}
+}
+
+footer {
+	margin-top: 2em;
+	background-color: rgb(250, 247, 247);
+	font-size: 1rem;
+
+	.top {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		padding: 1.5em 1em;
+
+		&__title {
+			font-size: 2rem;
+			padding: 0.2em;
+		}
+
+		&__content {
+			display: flex;
+			justify-content: space-between;
+			align-items: start;
+			font-size: 1.4rem;
+		}
+
+		&__content h3 {
+			font-size: 1.6rem;
+		}
+
+		&__about-us, &__our-company, &__docs {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 1em;
+		}
+
+		&__about-us li, &__our-company li, &__docs li {
+			padding: 0.5em 0;
+		}
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 1em;
+		font-size: 1.5rem;
+	}
 }
 
 @media (min-width: 576px) {
@@ -238,6 +376,38 @@ main {
 		.nav {
 			&__title {
 				font-size: 2.5rem;
+			}
+		}
+	}
+
+	main {
+		.offers {
+			&__cards {
+				.offers__card {
+					padding: 2em 0em;
+					width: 60vw;
+					margin-left: 1.5em;
+				}
+			}
+		}
+	}
+
+	footer {
+		.top {
+			&__content {
+				padding: 1em 2em;
+				font-size: 1.5rem;
+			}
+
+			&__content h3 {
+				font-size: 2rem;
+			}
+			&__about-us, &__our-company, &__docs {
+				padding: 2em 1.5em;
+			}
+
+			&__about-us li, &__our-company li, &__docs li {
+				padding: .8em 0;
 			}
 		}
 	}
@@ -261,7 +431,7 @@ main {
 
 	header {
 		margin-top: 0;
-		background-image: url('dist/img/jungleBig.jpg');
+		background-image: url("/dist/img/jungleBig.jpg");
 
 		.hero-text {
 			font-size: 2.5rem;
@@ -274,15 +444,14 @@ main {
 
 	main {
 		.about-us {
-			
 			&__body {
 				flex-direction: row;
 				justify-content: center;
-				
+
 				h3 {
 					text-align: left;
 				}
-				
+
 				&__text {
 					margin-left: 1em;
 					font-size: 3rem;
@@ -297,22 +466,50 @@ main {
 				}
 
 				img {
-					content: url('dist/img/watersBig.jpg');
+					content: url("/dist/img/watersBig.jpg");
 					width: 47%;
 				}
 			}
 		}
 
 		.banner-family {
-			background-image: url('dist/img/girlBig.jpg');
+			background-image: url("/dist/img/girlBig.jpg");
 
 			&__text {
 				font-size: 2rem;
 			}
-			
+		}
+
+		.offers {
+			&__cards {
+				.offers__card {
+					width: 41vw;
+				}
+
+				.offers__card:first-child {
+					margin-left: 0;
+				}
+			}
 		}
 	}
 
+	footer {
+		.top {
+			flex-direction: row;
+
+			&__title {
+				font-size: 3rem;
+			}
+
+			&__content {
+				font-size: 1.8rem;
+			}
+
+			&__content h3 {
+				font-size: 2.2rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 997px) {
@@ -320,6 +517,51 @@ main {
 		.banner-family {
 			&__text {
 				font-size: 3rem;
+			}
+		}
+
+		.offers {
+			&__cards {
+				font-size: 1.7rem;
+				.offers__card {
+					width: 30vw;
+				}
+			}
+		}
+	}
+
+	footer {
+		.top {
+			&__title {
+				font-size: 3.5rem;
+			}
+
+			&__content {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	main {
+		.offers {
+			&__cards {
+				.offers__card {
+					width: 23vw;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	main {
+		.offers {
+			&__cards {
+				.offers__card {
+					width: 15vw;
+				}
 			}
 		}
 	}
