@@ -38,7 +38,10 @@ a {
 }
 
 nav {
+	position: sticky;
+	top: 0;
 	background-color: #fff;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 	z-index: 100;
 
 	.nav {
@@ -348,7 +351,9 @@ footer {
 			font-size: 1.6rem;
 		}
 
-		&__about-us, &__our-company, &__docs {
+		&__about-us,
+		&__our-company,
+		&__docs {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -356,7 +361,9 @@ footer {
 			padding: 1em;
 		}
 
-		&__about-us li, &__our-company li, &__docs li {
+		&__about-us li,
+		&__our-company li,
+		&__docs li {
 			padding: 0.5em 0;
 		}
 	}
@@ -402,12 +409,16 @@ footer {
 			&__content h3 {
 				font-size: 2rem;
 			}
-			&__about-us, &__our-company, &__docs {
+			&__about-us,
+			&__our-company,
+			&__docs {
 				padding: 2em 1.5em;
 			}
 
-			&__about-us li, &__our-company li, &__docs li {
-				padding: .8em 0;
+			&__about-us li,
+			&__our-company li,
+			&__docs li {
+				padding: 0.8em 0;
 			}
 		}
 	}
@@ -415,16 +426,19 @@ footer {
 
 @media (min-width: 768px) {
 	nav {
-		.nav__mobile {
-			display: none;
-		}
+		.nav {
+			padding: 0.5em;
+			.nav__mobile {
+				display: none;
+			}
 
-		.nav__desktop {
-			display: flex;
-			font-size: 2.7rem;
+			.nav__desktop {
+				display: flex;
+				font-size: 2.7rem;
 
-			.nav__title {
-				font-size: 3.3rem;
+				.nav__title {
+					font-size: 3.3rem;
+				}
 			}
 		}
 	}
@@ -512,7 +526,7 @@ footer {
 	}
 }
 
-@media (min-width: 997px) {
+@media (min-width: 992px) {
 	main {
 		.banner-family {
 			&__text {
@@ -538,6 +552,10 @@ footer {
 
 			&__content {
 				font-size: 1.5rem;
+			}
+			&__about-us,
+			&__our-company {
+				padding: 2em 3em;
 			}
 		}
 	}
