@@ -1,4 +1,5 @@
 @use "_reset.scss";
+@use "_form.scss";
 
 html {
 	font-size: 62.5%;
@@ -124,7 +125,7 @@ nav {
 
 header {
 	position: relative;
-	background-image: url("/dist/img/jungleSmall.jpg");
+	background-image: url("../../dist/img/jungleSmall.jpg");
 	background-size: cover;
 	background-position: center;
 	min-height: 40vh;
@@ -166,12 +167,9 @@ main {
 		flex-direction: column;
 		align-items: center;
 		font-size: 3rem;
-
-		h3 {
-			font-weight: 400;
-		}
-
+		
 		&__title {
+			font-weight: 400;
 			padding: 1em;
 			text-transform: uppercase;
 		}
@@ -207,7 +205,7 @@ main {
 		align-items: center;
 		min-height: 30vh;
 		margin-top: 2em;
-		background-image: url("/dist/img/girlSmall.jpg");
+		background-image: url("../../dist/img/girlSmall.jpg");
 		background-size: cover;
 		background-position: center;
 		font-size: 1.5rem;
@@ -333,17 +331,19 @@ footer {
 		justify-content: space-around;
 		align-items: center;
 		flex-direction: column;
-		padding: 1.5em 1em;
+		padding: 2em 1em;
 
 		&__title {
-			font-size: 2rem;
 			padding: 0.2em;
+			margin-bottom: 0.5em;
+			font-size: 2rem;
 		}
 
 		&__content {
 			display: flex;
-			justify-content: space-between;
-			align-items: start;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 			font-size: 1.4rem;
 		}
 
@@ -358,13 +358,14 @@ footer {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			text-align: center;
 			padding: 1em;
 		}
 
 		&__about-us li,
 		&__our-company li,
 		&__docs li {
-			padding: 0.5em 0;
+			padding: .8em 0;
 		}
 	}
 
@@ -377,6 +378,7 @@ footer {
 		font-size: 1.5rem;
 	}
 }
+
 
 @media (min-width: 576px) {
 	nav {
@@ -412,7 +414,7 @@ footer {
 			&__about-us,
 			&__our-company,
 			&__docs {
-				padding: 2em 1.5em;
+				padding: 2em;
 			}
 
 			&__about-us li,
@@ -445,7 +447,7 @@ footer {
 
 	header {
 		margin-top: 0;
-		background-image: url("/dist/img/jungleBig.jpg");
+		background-image: url("../../dist/img/jungleBig.jpg");
 
 		.hero-text {
 			font-size: 2.5rem;
@@ -480,14 +482,14 @@ footer {
 				}
 
 				img {
-					content: url("/dist/img/watersBig.jpg");
+					content: url("../../dist/img/watersBig.jpg");
 					width: 47%;
 				}
 			}
 		}
 
 		.banner-family {
-			background-image: url("/dist/img/girlBig.jpg");
+			background-image: url("../../dist/img/girlBig.jpg");
 
 			&__text {
 				font-size: 2rem;
@@ -509,13 +511,16 @@ footer {
 
 	footer {
 		.top {
-			flex-direction: row;
+			flex-direction: column;
 
 			&__title {
 				font-size: 3rem;
 			}
 
 			&__content {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: start;
 				font-size: 1.8rem;
 			}
 
@@ -546,6 +551,7 @@ footer {
 
 	footer {
 		.top {
+			flex-direction: row;
 			&__title {
 				font-size: 3.5rem;
 			}
