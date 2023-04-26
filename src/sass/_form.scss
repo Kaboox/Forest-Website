@@ -38,6 +38,18 @@
             min-height: 8vh;
             padding: 1em;
         }
+
+        .submit {
+            padding: 1em;
+            margin-top: 3em;
+            background: none;
+            cursor: pointer;
+            transition: background-color .3s;
+        }
+
+        .submit:hover {
+            background-color: rgba(125, 132, 118, 0.584);
+        }
         
 	}
     
@@ -80,17 +92,7 @@
                 max-width: 40%;
             }
 
-            .submit {
-                padding: 1em;
-                margin-top: 3em;
-                background: none;
-                cursor: pointer;
-                transition: background-color .3s;
-            }
-
-            .submit:hover {
-                background-color: rgba(125, 132, 118, 0.584);
-            }
+            
         }
     }
 }
