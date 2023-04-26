@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt</title>
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/4bb3c15064.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
+
 <body>
 
     <nav>
@@ -46,29 +48,29 @@
         </ul>
     </div>
 
+
     <main>
-        <section class="form">
-            <h3 class="section-title">Kontakt</h3>
-            <form>
-                <label for="name">Imię</label>
-                <input type="text" placeholder="Podaj imię...">
-
-                <label for="email">Email</label>
-                <input type="email" placeholder="Podaj nazwisko...">
-
-                <label for="msg">Wiadomość</label>
-                <textarea name="msg" placeholder="Wpisz wiadomość..."></textarea>
-            </form>
-        </section>
-
-        <section class="location">
-            <h3 class="section-title">Lokalizacja</h3>
-
-           <div class="location__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898273002159!2d19.88797799317559!3d50.08819143996843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1682444945211!5m2!1spl!2spl" width="370" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
-        </section>
+        <div class="wrapper">
+            <section class="special-offer">
+                <h3 class="section-title">Oferta Specjalna</h3>
+                <div class="special-offer__content">
+                    <img src="dist/img/oferta1small.jpg" alt="Zdjęcie rodziny zjeżdżającej ekstremalnym spływem">
+                    <div class="special-offer-text">
+                        <h4>Pakiet Premium Ultra</h4>
+                        <p class="price">$420</p>
+                        <p class="description">Pakiet zawiera pakiet Premium + ekstremalny zjazd spływem dla całej rodziny</p>
+                        <button class="choose">Wybierz</button>
+                    </div>
+                </div>
+    
+            </section>
+        </div>
     </main>
+
+
+
+
+
 
     <footer>
         <div class="wrapper">
@@ -109,8 +111,10 @@
             <p>&copy;<span class="year"></span> Forest Group Company Ltd.</p>
         </section>
     </footer>
-    
+
+
 
     <script src="dist/js/main.min.js"></script>
 </body>
+
 </html>

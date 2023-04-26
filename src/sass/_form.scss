@@ -7,11 +7,7 @@
     align-items: center;
     min-height: 50vh;
     margin-top: 1em;
-    h3 {
-        font-weight: 400;
-        padding: 1em;
-        font-size: 3rem;
-    }
+    
     
 	form {
         display: flex;
@@ -47,11 +43,6 @@
 }
 
 .location {
-    h3 {
-        font-weight: 400;
-        padding: 1em;
-        font-size: 3rem;
-    }
     display: flex;
     flex-direction: column;
     justify-content: center;

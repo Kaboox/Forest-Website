@@ -1,5 +1,6 @@
 @use "_reset.scss";
 @use "_form.scss";
+@use "_offer.scss";
 
 html {
 	font-size: 62.5%;
@@ -28,6 +29,35 @@ li {
 a {
 	color: black;
 	text-decoration: none;
+}
+
+.section-title {
+	font-weight: 400;
+	padding: 1em;
+	text-transform: uppercase;
+	font-size: 3.5rem;
+}
+
+.price {
+	font-size: 2.7rem;
+	font-weight: 700;
+}
+
+.choose {
+	margin-top: 1.5em;
+	padding: 0.6em;
+	width: 60%;
+	background: none;
+	border: none;
+	border-radius: 8px;
+	box-shadow: 2px 2px 5px black;
+	font-size: 1.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.choose:hover {
+	background-color: rgb(10, 218, 100);
 }
 
 .fa-check {
@@ -169,12 +199,6 @@ main {
 		flex-direction: column;
 		align-items: center;
 		font-size: 3rem;
-		
-		&__title {
-			font-weight: 400;
-			padding: 1em;
-			text-transform: uppercase;
-		}
 
 		&__body {
 			display: flex;
@@ -248,16 +272,15 @@ main {
 		text-align: center;
 		margin-top: 0.5em;
 		font-size: 3rem;
-		&__title {
-			padding: 1em;
-			h3 {
-				font-weight: 400;
-				text-transform: uppercase;
-			}
-		}
+
 		&__text {
 			padding: 1em;
 			font-size: 2rem;
+
+			a {
+				font-weight: bold;
+				color: rgb(10, 218, 100);
+			}
 		}
 
 		&__cards {
@@ -290,11 +313,6 @@ main {
 					font-size: 2.5rem;
 				}
 
-				.price {
-					font-size: 2.7rem;
-					font-weight: 700;
-				}
-
 				.card-options {
 					text-align: left;
 
@@ -303,17 +321,6 @@ main {
 					}
 				}
 
-				.choose {
-					margin-top: 1.5em;
-					padding: 0.5em;
-					width: 60%;
-					background: none;
-					border: none;
-					border-radius: 8px;
-					box-shadow: 2px 2px 5px black;
-					font-size: 1.5rem;
-					cursor: pointer;
-				}
 				.standard {
 					background-color: rgb(10, 218, 100);
 					box-shadow: 2px 2px 5px rgb(10, 218, 100);
@@ -367,7 +374,7 @@ footer {
 		&__about-us li,
 		&__our-company li,
 		&__docs li {
-			padding: .8em 0;
+			padding: 0.8em 0;
 		}
 	}
 
@@ -380,7 +387,6 @@ footer {
 		font-size: 1.5rem;
 	}
 }
-
 
 @media (min-width: 576px) {
 	nav {
@@ -429,6 +435,10 @@ footer {
 }
 
 @media (min-width: 768px) {
+	.choose {
+		padding: 0.8em;
+		font-size: 2rem;
+	}
 	nav {
 		.nav {
 			padding: 0.5em;
@@ -512,7 +522,6 @@ footer {
 	}
 
 	footer {
-		
 		.top {
 			flex-direction: column;
 
@@ -535,6 +544,10 @@ footer {
 }
 
 @media (min-width: 992px) {
+	.choose {
+		font-size: 1.5rem;
+	}
+
 	main {
 		.banner-family {
 			&__text {
@@ -545,6 +558,7 @@ footer {
 		.offers {
 			&__cards {
 				font-size: 1.7rem;
+
 				.offers__card {
 					width: 30vw;
 				}
