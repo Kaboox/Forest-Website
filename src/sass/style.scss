@@ -398,7 +398,7 @@ footer {
 			padding: 0.8em 0;
 		}
 
-		&__about-us li a:hover {
+		&__about-us li a:hover, &__our-company li a:hover, &__docs li a:hover {
 			color: rgb(151, 149, 146);
 		}
 	}
