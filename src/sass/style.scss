@@ -107,22 +107,28 @@ nav {
 				justify-content: center;
 				align-items: center;
 
-				li {
+				.nav__link {
 					padding: 1em;
 					transition: background-color 0.3s, color 0.3s;
 					cursor: pointer;
+					transition: transform .3s;
 
 					a {
 						color: black;
 					}
+
+					&--present {
+						background-color: #333;
+						color: #fff;
+
+						a {
+							color: #fff;
+						}
+					}
 				}
 
-				li:hover {
-					background-color: #333;
-				}
-
-				li:hover > a {
-					color: #fff;
+				.nav__link:hover{
+					transform: scale(1.1);
 				}
 			}
 		}
@@ -454,24 +460,7 @@ footer {
 		padding: 0.8em;
 		font-size: 2rem;
 	}
-	nav {
-		.nav {
-			padding: 0.5em;
-			.nav__mobile {
-				display: none;
-			}
-
-			.nav__desktop {
-				display: flex;
-				font-size: 2.7rem;
-
-				.nav__title {
-					font-size: 3.3rem;
-				}
-			}
-		}
-	}
-
+	
 	header {
 		margin-top: 0;
 		background-image: url("../../dist/img/jungleBig.jpg");
@@ -481,9 +470,7 @@ footer {
 		}
 	}
 
-	.mobile-menu {
-		display: none;
-	}
+	
 
 	main {
 		.about-us {
@@ -564,6 +551,19 @@ footer {
 	}
 	.choose {
 		font-size: 1.5rem;
+	}
+
+	nav {
+		.nav {
+			padding: 0.5em;
+			&__mobile {
+				display: none;
+			}
+
+			&__desktop {
+				display: flex;
+			}
+		}
 	}
 
 	main {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="dist/favicon.ico">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
+
 <body>
 
     <nav>
@@ -26,10 +28,18 @@
 
                 <div class="nav__desktop">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="index.html">O nas</a></li>
-                        <li><a href="index.html">Oferta</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <a href="index.html">
+                            <li class="nav__link">Home</li>
+                        </a>
+                        <a href="index.html">
+                            <li class="nav__link">O nas</li>
+                        </a>
+                        <a href="index.html">
+                            <li class="nav__link">Oferta</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__link">Kontakt</li>
+                        </a>
                     </ul>
                 </div>
 
@@ -51,14 +61,26 @@
         <section class="form">
             <h3 class="section-title">Kontakt</h3>
             <form>
-                <label for="name">Imię</label>
-                <input type="text" placeholder="Podaj imię...">
+                <div class="input-box">
+                    <label for="name">Imię</label>
+                    <input type="text" placeholder="Podaj imię..." class="name">
+                    <p class="form__error">Podaj imię</p>
 
-                <label for="email">Email</label>
-                <input type="email" placeholder="Podaj email...">
+                </div>
 
-                <label for="msg">Wiadomość</label>
-                <textarea name="msg" placeholder="Wpisz wiadomość..."></textarea>
+                <div class="input-box">
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Podaj email..." class="email">
+                    <p class="form__error">Podaj email</p>
+                </div>
+
+                <div class="input-box">
+
+                    <label for="msg">Wiadomość</label>
+                    <textarea name="msg" placeholder="Wpisz wiadomość..." class="message"></textarea>
+                    <p class="form__error">Uzupełnij wiadomość</p>
+                </div>
 
                 <input type="submit" class="submit">
             </form>
@@ -67,15 +89,18 @@
         <section class="location">
             <h3 class="section-title">Lokalizacja</h3>
 
-           <div class="location__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898273002159!2d19.88797799317559!3d50.08819143996843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1682444945211!5m2!1spl!2spl" width="370" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
+            <div class="location__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.898273002159!2d19.88797799317559!3d50.08819143996843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a326d015c3b%3A0x47a12cd367a1f34e!2sRestauracja%20McDonald&#39;s!5e0!3m2!1spl!2spl!4v1682444945211!5m2!1spl!2spl"
+                    width="370" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="wrapper">
-        <section class="top">
+            <section class="top">
                 <div class="top__title">
                     <p><i class="fa-solid fa-tree"> Forest</i></p>
                 </div>
@@ -101,7 +126,7 @@
                         <ul>
                             <li><a href="#">Wnioski</a></li>
                             <li><a href="#">Rezerwacje</a></li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -112,8 +137,10 @@
             <p>&copy;<span class="year"></span> Forest Group Company Ltd.</p>
         </section>
     </footer>
-    
+
 
     <script src="dist/js/main.min.js"></script>
+    <script src="dist/js/formValidator.min.js"></script>
 </body>
+
 </html>

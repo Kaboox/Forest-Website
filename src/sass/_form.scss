@@ -17,26 +17,34 @@
         width: 100vw;
         margin-top: 1em;
         
-        input, textarea {
-            font-size: 1.5rem;
-            border: 1px solid rgba(0,0,0,.5);
-        }
-        
-        input {
-            width: 70%;
-            padding: .8em;
-            border-radius: 5px;
-        }
-        
-        label {
-            padding: 1em;
-        }
-        
-        textarea {
-            min-width: 70%;
-            max-width: 70%;
-            min-height: 8vh;
-            padding: 1em;
+        .input-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            input, textarea {
+                font-size: 1.5rem;
+                border: 1px solid rgba(0,0,0,.5);
+            }
+            
+            input {
+                width: 70%;
+                padding: .8em;
+                border-radius: 5px;
+            }
+            
+            label {
+                padding: 1em;
+                margin-top: 0.2em;
+            }
+            
+            textarea {
+                min-width: 70%;
+                max-width: 70%;
+                min-height: 8vh;
+                padding: 1em;
+            }
         }
 
         .submit {
@@ -49,6 +57,11 @@
 
         .submit:hover {
             background-color: rgba(125, 132, 118, 0.584);
+        }
+
+        .form__error {
+            color: tomato;
+            display: none;
         }
         
 	}

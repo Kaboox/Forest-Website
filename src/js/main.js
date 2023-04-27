@@ -5,6 +5,7 @@ const allMenuLinks = mobileMenu.querySelectorAll('a')
 const currentYear = document.querySelector('.year')
 const body = document.querySelector('body')
 
+
 currentYear.textContent = new Date().getFullYear();
 
 burgerBtn.addEventListener('click', () => {
