@@ -5,4 +5,4 @@ Techstack:<br/>
 -html<br/>
 -sass<br/>
 -javascript<br/>
--gulp__
+-gulp
