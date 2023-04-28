@@ -1,0 +1,133 @@
+footer .top,
+footer .top__content,
+footer .top__about-us,
+footer .top__company,
+footer .top__docs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer {
+	margin-top: 5em;
+	background-color: rgb(250, 247, 247);
+	font-size: 1rem;
+
+	.top {
+		justify-content: space-around;
+		padding: 2em 1em;
+
+		&__title {
+			padding: 0.2em;
+			margin-bottom: 0.5em;
+			font-size: 2rem;
+		}
+
+		&__content {
+			justify-content: center;
+			font-size: 1.4rem;
+		}
+
+		&__content h3 {
+			font-size: 1.6rem;
+		}
+
+		&__about-us,
+		&__our-company,
+		&__docs {
+			justify-content: center;
+			text-align: center;
+			padding: 1em;
+		}
+
+		&__about-us li,
+		&__our-company li,
+		&__docs li {
+			padding: 0.8em 0;
+		}
+
+		&__about-us li a:hover,
+		&__our-company li a:hover,
+		&__docs li a:hover {
+			color: rgb(151, 149, 146);
+		}
+	}
+
+	.bottom {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 1em;
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 576px) {
+	footer {
+		.top {
+			&__content {
+				padding: 1em 2em;
+				font-size: 1.5rem;
+			}
+
+			&__content h3 {
+				font-size: 2rem;
+			}
+
+			&__about-us,
+			&__our-company,
+			&__docs {
+				padding: 2em;
+			}
+
+			&__about-us li,
+			&__our-company li,
+			&__docs li {
+				padding: 0.8em 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	footer {
+		.top {
+			flex-direction: column;
+
+			&__title {
+				font-size: 3rem;
+			}
+
+			&__content {
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: start;
+				font-size: 1.8rem;
+			}
+
+			&__content h3 {
+				font-size: 2.2rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	footer {
+		.top {
+			flex-direction: row;
+			&__title {
+				font-size: 3.5rem;
+			}
+
+			&__content {
+				font-size: 1.5rem;
+			}
+			&__about-us,
+			&__our-company {
+				padding: 2em 3em;
+			}
+		}
+	}
+}

@@ -1,6 +1,9 @@
 @use "_reset.scss";
 
-.form, .form form, .form form .input-box, .location {
+.form,
+.form form,
+.form form .input-box,
+.location {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -8,8 +11,7 @@
 }
 
 .form {
-	
-	form {	
+	form {
 		margin-top: 1em;
 
 		.input-box {
@@ -20,8 +22,8 @@
 				border: 1px solid rgba(0, 0, 0, 0.5);
 			}
 
-
-			input, textarea {
+			input,
+			textarea {
 				min-width: 70%;
 				max-width: 70%;
 			}
@@ -40,7 +42,6 @@
 				min-height: 8vh;
 				padding: 1em;
 			}
-
 		}
 
 		.submit {
@@ -77,10 +78,8 @@
 }
 
 @media (min-width: 768px) {
-	.location {
-		&__map {
-			width: 70vw;
-		}
+	.location__map {
+		width: 70vw;
 	}
 
 	.form {
@@ -88,22 +87,20 @@
 			.input-box {
 				input,
 				textarea {
-                    min-width: 40%;
-                    max-width: 40%;
+					min-width: 40%;
+					max-width: 40%;
 				}
 			}
 
-            .submit {
-                width: 40%;
-            }
+			.submit {
+				width: 40%;
+			}
 		}
 	}
 }
 
 @media (min-width: 1400px) {
-	.location {
-		&__map {
-			width: 50vw;
-		}
+	.location__map {
+		width: 50vw;
 	}
 }

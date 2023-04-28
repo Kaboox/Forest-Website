@@ -1,0 +1,48 @@
+header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	background-image: url("../../dist/img/jungleSmall.jpg");
+	background-size: cover;
+	background-position: center;
+	min-height: 40vh;
+	z-index: -2;
+
+	.hero-text {
+		color: #fff;
+		font-size: 2rem;
+		z-index: 2;
+
+		p {
+			margin-bottom: 0.2em;
+			padding: 0em 1em;
+		}
+
+		h2 {
+			padding: 0em 0.7em;
+		}
+	}
+
+	.hero-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.7);
+		z-index: -1;
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		margin-top: 0;
+		background-image: url("../../dist/img/jungleBig.jpg");
+
+		.hero-text {
+			font-size: 2.5rem;
+		}
+	}
+}
