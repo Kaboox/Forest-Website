@@ -1,8 +1,13 @@
+main .about-us,
+main .offers,
+main .offers__cards .offers__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 main {
 	.about-us {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		font-size: 3rem;
 
 		&__body {
@@ -70,9 +75,6 @@ main {
 	}
 
 	.offers {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		justify-content: center;
 		text-align: center;
 		margin-top: 0.5em;
@@ -102,9 +104,6 @@ main {
 			font-size: 2rem;
 
 			.offers__card {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
 				justify-content: center;
 				width: 81vw;
 				padding: 1.5em;

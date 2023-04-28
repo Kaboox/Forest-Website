@@ -46,6 +46,12 @@ footer {
 			padding: 0.8em 0;
 		}
 
+		&__about-us li a,
+		&__our-company li a,
+		&__docs li a {
+			transition: color .3s;
+		}
+
 		&__about-us li a:hover,
 		&__our-company li a:hover,
 		&__docs li a:hover {
