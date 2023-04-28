@@ -1,8 +1,8 @@
 # Forest-Website
 
-My first bigger website.__
-Techstack:__
--html__
--sass__
--javascript__
+My first bigger website.<br/>
+Techstack:<br/>
+-html<br/>
+-sass<br/>
+-javascript<br/>
 -gulp__
