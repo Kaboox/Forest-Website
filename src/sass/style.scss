@@ -109,9 +109,8 @@ nav {
 
 				.nav__link {
 					padding: 1em;
-					transition: background-color 0.3s, color 0.3s;
+					transition: background-color 0.3s, color 0.3s, transform 0.3s;
 					cursor: pointer;
-					transition: transform .3s;
 
 					a {
 						color: black;
@@ -127,7 +126,7 @@ nav {
 					}
 				}
 
-				.nav__link:hover{
+				.nav__link:hover {
 					transform: scale(1.1);
 				}
 			}
@@ -136,17 +135,17 @@ nav {
 }
 
 .mobile-menu {
-	display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	width: 100vw;
+	background-color: #fff;
 	transform: translateX(110%);
 	transition: transform 0.4s;
-	background-color: #fff;
 	z-index: 1000;
 
 	button {
@@ -173,14 +172,14 @@ nav {
 
 header {
 	position: relative;
-	background-image: url("../../dist/img/jungleSmall.jpg");
-	background-size: cover;
-	background-position: center;
-	min-height: 40vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
+	background-image: url("../../dist/img/jungleSmall.jpg");
+	background-size: cover;
+	background-position: center;
+	min-height: 40vh;
 	z-index: -2;
 
 	.hero-text {
@@ -245,8 +244,8 @@ main {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		min-height: 30vh;
 		margin-top: 2em;
+		min-height: 30vh;
 		background-image: url("../../dist/img/girlSmall.jpg");
 		background-size: cover;
 		background-position: center;
@@ -267,15 +266,15 @@ main {
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -50%);
-			width: 60%;
-			height: 45%;
-			text-align: center;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			width: 60%;
+			height: 45%;
+			text-align: center;
 			color: #fff;
 			border: 3px solid #fff;
+			transform: translate(-50%, -50%);
 			z-index: 3;
 		}
 	}
@@ -318,7 +317,7 @@ main {
 				text-align: center;
 				box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.4);
 				border-radius: 5px;
-				transition: transform .3s;
+				transition: transform 0.3s;
 
 				.card-title,
 				.price,
@@ -398,7 +397,9 @@ footer {
 			padding: 0.8em 0;
 		}
 
-		&__about-us li a:hover, &__our-company li a:hover, &__docs li a:hover {
+		&__about-us li a:hover,
+		&__our-company li a:hover,
+		&__docs li a:hover {
 			color: rgb(151, 149, 146);
 		}
 	}
@@ -444,6 +445,7 @@ footer {
 			&__content h3 {
 				font-size: 2rem;
 			}
+
 			&__about-us,
 			&__our-company,
 			&__docs {
@@ -464,7 +466,7 @@ footer {
 		padding: 0.8em;
 		font-size: 2rem;
 	}
-	
+
 	header {
 		margin-top: 0;
 		background-image: url("../../dist/img/jungleBig.jpg");
@@ -473,8 +475,6 @@ footer {
 			font-size: 2.5rem;
 		}
 	}
-
-	
 
 	main {
 		.about-us {

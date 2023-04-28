@@ -1,16 +1,15 @@
-.special-offer {
+.special-offer, .special-offer__content {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+.special-offer {
+	justify-content: center;
 	text-align: center;
-	margin-top: 2em;
     
-	&__content {
-        display: flex;
+	&__content {  
 		justify-content: space-between;
-		align-items: center;
-		flex-direction: column;
 		margin-top: 1em;
 		padding: 2em;
         border: 1px solid rgba(0,0,0,.1);
