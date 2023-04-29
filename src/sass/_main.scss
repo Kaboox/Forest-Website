@@ -86,12 +86,12 @@ main {
 
 			a {
 				font-weight: bold;
-				color: rgb(10, 218, 100);
+				color: rgb(11, 152, 72);
 				transition: color 0.3s;
 			}
 
 			a:hover {
-				color: rgb(11, 152, 72);
+				color: rgb(10, 218, 100);
 			}
 		}
 
@@ -126,11 +126,11 @@ main {
 				.card-options {
 					text-align: left;
 					color: rgb(19, 25, 22);
-					
+
 					.fa-check {
 						color: rgb(20, 192, 15);
 					}
-					
+
 					.option-off {
 						color: rgb(117, 117, 117);
 					}
