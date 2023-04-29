@@ -33,11 +33,12 @@ nav {
 				justify-content: center;
 
 				.nav__link {
-					padding: 1em;
 					transition: background-color 0.3s, color 0.3s, transform 0.3s;
 					cursor: pointer;
-
+					
 					a {
+						display: block;
+						padding: 1em;
 						color: black;
 					}
 
