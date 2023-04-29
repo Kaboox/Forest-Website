@@ -9,14 +9,14 @@ const body = document.querySelector('body')
 currentYear.textContent = new Date().getFullYear();
 
 burgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('mobile-menu--active')
+    mobileMenu.classList.toggle('mobile-menu--active')
     body.style.overflowY = 'hidden'
 })
 
-closeMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('mobile-menu--active')
-    body.style.overflowY = 'auto'
-})
+// closeMenuBtn.addEventListener('click', () => {
+//     mobileMenu.classList.remove('mobile-menu--active')
+//     body.style.overflowY = 'auto'
+// })
 
 allMenuLinks.forEach(item => {
     item.addEventListener('click', () => {
