@@ -73,10 +73,10 @@ nav {
 	background-color: #fff;
 	transform: translateX(110%);
 	transition: transform 0.4s;
+	z-index: 100;
 	
 
 	button {
-		display: none;
 		position: fixed;
 		top: 0;
 		right: 0;
