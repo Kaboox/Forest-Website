@@ -1,11 +1,11 @@
- @use "_reset.scss";
- @use "_nav.scss";
- @use "_header.scss";
- @use "_main.scss";
- @use "_footer.scss";
- @use "_form.scss";
- @use "_contact.scss";
- @use "_media.scss";
+@use "_reset.scss";
+@use "_nav.scss";
+@use "_header.scss";
+@use "_main.scss";
+@use "_footer.scss";
+@use "_contact.scss";
+@use "_offer.scss";
+//@use "_media.scss";
 
 html {
 	font-size: 62.5%;
@@ -36,7 +36,6 @@ a {
 	color: black;
 	text-decoration: none;
 }
-
 
 section {
 	margin-top: 1em;
@@ -84,3 +83,18 @@ section:first-child {
 	color: rgb(150, 150, 150);
 }
 
+@media (min-width: 768px) {
+	.choose {
+		padding: 0.8em;
+		font-size: 2rem;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 8em;
+	}
+	.choose {
+		font-size: 1.5rem;
+	}
+}

@@ -92,3 +92,24 @@ nav {
 		padding: 1.3em;
 	}
 }
+
+@media (min-width: 576px) {
+	nav {
+		.nav__title {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	nav .nav {
+		padding: 0.5em;
+		&__mobile {
+			display: none;
+		}
+
+		&__desktop {
+			display: flex;
+		}
+	}
+}
