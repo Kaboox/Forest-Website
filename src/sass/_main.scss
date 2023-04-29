@@ -125,6 +125,15 @@ main {
 
 				.card-options {
 					text-align: left;
+					color: rgb(19, 25, 22);
+					
+					.fa-check {
+						color: rgb(20, 192, 15);
+					}
+					
+					.option-off {
+						color: rgb(117, 117, 117);
+					}
 
 					p {
 						padding: 0.2em 0em;
