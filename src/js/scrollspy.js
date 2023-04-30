@@ -16,9 +16,3 @@ document.addEventListener('scroll', () => {
         navLinks[2].classList.remove('nav__link--present')
     }
 })
-
-// navLinks.forEach(item => () => {
-//     item.addEventListener('click', e => {
-//         console.log(e);
-//     })
-// })
