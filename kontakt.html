@@ -18,7 +18,7 @@
 
     <nav>
         <div class="wrapper">
-            <section class="nav">
+            <div class="nav">
                 <div class="nav__title">
                     <p><a href="index.html"><i class="fa-solid fa-tree"> Forest</i></a></p>
                 </div>
@@ -36,7 +36,7 @@
                     </ul>
                 </div>
 
-            </section>
+            </div>
         </div>
     </nav>
 
@@ -56,7 +56,7 @@
             <form>
                 <div class="input-box">
                     <label for="name">Imię</label>
-                    <input type="text" placeholder="Podaj imię..." class="name">
+                    <input type="text" id="name" placeholder="Podaj imię..." class="name">
                     <p class="form__error">Podaj imię</p>
 
                 </div>
@@ -64,14 +64,14 @@
                 <div class="input-box">
 
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Podaj email..." class="email">
+                    <input type="email" id="email" placeholder="Podaj email..." class="email">
                     <p class="form__error email-error">Podaj poprawny email</p>
                 </div>
 
                 <div class="input-box">
 
                     <label for="msg">Wiadomość</label>
-                    <textarea name="msg" placeholder="Wpisz wiadomość..." class="message"></textarea>
+                    <textarea name="msg" id="msg" placeholder="Wpisz wiadomość..." class="message"></textarea>
                     <p class="form__error">Uzupełnij wiadomość</p>
                 </div>
 
