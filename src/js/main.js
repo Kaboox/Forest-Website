@@ -10,7 +10,7 @@ currentYear.textContent = new Date().getFullYear();
 
 burgerBtn.addEventListener('click', () => {
     mobileMenu.classList.add('mobile-menu--active')
-    body.style.overflowY = 'hidden';
+    body.style.overflowY = 'auto';
 })
 
 closeMenuBtn.addEventListener('click', () => {
