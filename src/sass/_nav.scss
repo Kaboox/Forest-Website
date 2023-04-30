@@ -70,6 +70,7 @@ nav {
 	transform: translateX(110%);
 	transition: transform 0.4s;
 	z-index: 100;
+	overflow: auto;
 
 	button {
 		position: fixed;
