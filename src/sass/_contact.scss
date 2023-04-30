@@ -51,11 +51,12 @@
 			background: none;
 			cursor: pointer;
 			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: rgba(229, 231, 227, 0.584);
+			}
 		}
 
-		.submit:hover {
-			background-color: rgba(229, 231, 227, 0.584);
-		}
 
 		.form__error {
 			color: tomato;
