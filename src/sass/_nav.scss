@@ -32,7 +32,7 @@ nav {
 		&__desktop {
 			display: none;
 
-			.nav__link {
+			.nav-link {
 				transition: background-color 0.3s, color 0.3s, transform 0.3s;
 				cursor: pointer;
 
@@ -52,7 +52,7 @@ nav {
 				}
 			}
 
-			.nav__link:hover {
+			.nav-link:hover {
 				transform: scale(1.1);
 			}
 		}

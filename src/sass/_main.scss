@@ -1,6 +1,6 @@
 main .about-us,
 main .offers,
-main .offers__cards .offers__card {
+main .offers__cards .offers-card {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -106,7 +106,7 @@ main {
 			padding: 0.7em;
 			font-size: 2rem;
 
-			.offers__card {
+			.offers-card {
 				justify-content: center;
 				width: 81vw;
 				padding: 1.5em;
@@ -146,7 +146,7 @@ main {
 			}
 		}
 
-		.offers__card:hover {
+		.offers-card:hover {
 			transform: scale(1.05);
 		}
 	}
@@ -155,7 +155,7 @@ main {
 @media (min-width: 576px) {
 	main {
 		.offers__cards {
-			.offers__card {
+			.offers-card {
 				padding: 2em 0em;
 				width: 60vw;
 				margin-left: 1.5em;
@@ -199,11 +199,11 @@ main {
 		}
 
 		.offers__cards {
-			.offers__card {
+			.offers-card {
 				width: 41vw;
 			}
 
-			.offers__card:first-child {
+			.offers-card:first-child {
 				margin-left: 0;
 			}
 		}
@@ -219,7 +219,7 @@ main {
 		.offers__cards {
 			font-size: 1.7rem;
 
-			.offers__card {
+			.offers-card {
 				width: 30vw;
 			}
 		}
@@ -227,13 +227,13 @@ main {
 }
 
 @media (min-width: 1200px) {
-	main .offers__cards .offers__card {
+	main .offers__cards .offers-card {
 		width: 23vw;
 	}
 }
 
 @media (min-width: 1400px) {
-	main .offers__cards .offers__card {
+	main .offers__cards .offers-card {
 		width: 15vw;
 	}
 }

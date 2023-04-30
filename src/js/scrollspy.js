@@ -1,15 +1,10 @@
-const navLinks = document.querySelectorAll('.nav__link ');
-const homeSection = document.querySelector('#home')
-const aboutusSection = document.querySelector('#about-us')
-const offerSection = document.querySelector('#offer')
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.scrollspy')
 
-const section = []
-section.push(homeSection)
-section.push(aboutusSection)
-section.push(offerSection)
+
 
 document.addEventListener('scroll', () => {
-    section.forEach(sec => {
+    sections.forEach(sec => {
 
         let top = window.scrollY;
         let offset = sec.offsetTop -150;
@@ -18,8 +13,8 @@ document.addEventListener('scroll', () => {
 
         if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
-                links.classList.remove('nav__link--present')
-                document.querySelector('.nav__link a[href*=' + id + ']').parentElement.classList.add('nav__link--present')
+                links.classList.remove('nav-link--present')
+                document.querySelector('.nav-link a[href*=' + id + ']').parentElement.classList.add('nav-link--present')
             })
         }
 
