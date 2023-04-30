@@ -20,7 +20,7 @@ main {
 				padding: 0.5em;
 			}
 
-			&__text {
+			.about-us-text {
 				padding: 0.5em;
 
 				p {
@@ -143,10 +143,6 @@ main {
 					}
 				}
 
-				.standard {
-					background-color: rgb(10, 218, 100);
-					box-shadow: 2px 2px 5px rgb(10, 218, 100);
-				}
 			}
 		}
 
@@ -174,11 +170,7 @@ main {
 			flex-direction: row;
 			justify-content: center;
 
-			h3 {
-				text-align: left;
-			}
-
-			&__text {
+			.about-us-text {
 				margin-left: 1em;
 				font-size: 3rem;
 
@@ -188,6 +180,7 @@ main {
 
 				h3 {
 					font-size: 3rem;
+					text-align: left;
 				}
 			}
 
